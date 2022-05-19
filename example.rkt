@@ -1,3 +1,3 @@
 #lang racket
-((lambda (x y) y) 1 2)
 
+(call-with-values (lambda () (values 1 2)) +)
